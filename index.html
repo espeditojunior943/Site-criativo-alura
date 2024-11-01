@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venda de Passagens Aéreas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Venda de Passagens Aéreas</h1>
+        <nav>
+            <ul>
+                <li><a href="#pesquisa">Pesquisa de Voos</a></li>
+                <li><a href="#ofertas">Ofertas</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="pesquisa">
+            <h2>Pesquise seu Voo</h2>
+            <form>
+                <label for="origem">Origem:</label>
+                <select id="origem" name="origem" required>
+                    <option value="" disabled selected>Selecione uma origem</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Belo Horizonte">Belo Horizonte</option>
+                    <option value="Brasília">Brasília</option>
+                    <option value="Salvador">Salvador</option>
+                </select>
+                
+                <label for="destino">Destino:</label>
+                <select id="destino" name="destino" required>
+                    <option value="" disabled selected>Selecione um destino</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Fortaleza">Fortaleza</option>
+                    <option value="Recife">Recife</option>
+                    <option value="Florianópolis">Florianópolis</option>
+                </select>
+                
+                <label for="data">Data de Ida:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="retorno">Data de Retorno:</label>
+                <input type="date" id="retorno" name="retorno">
+                
+                <button type="submit">Pesquisar</button>
+            </form>
+        </section>
+
+        <section id="ofertas">
+            <h2>Ofertas de Passagens</h2>
+            <div class="oferta">
+                <img src="https://www.segueviagem.com.br/wp-content/uploads/2016/05/Copacabana-e-Leme-Rio-de-Janeiro-shutterstock_1504221245.jpg" alt="Oferta 1">
+                <h3>Oferta 1: São Paulo - Rio de Janeiro</h3>
+                <p>A partir de R$199,00</p>
+            </div>
+            <div class="oferta">
+                <img src="https://www.viagensecaminhos.com/wp-content/uploads/2014/05/praia-da-pina-recife.jpg" alt="Oferta 2">
+                <h3>Oferta 2: Salvador - Recife</h3>
+                <p>A partir de R$249,00</p>
+            </div>
+            <div class="oferta">
+                <img src="https://www.zapimoveis.com.br/blog/wp-content/uploads/2024/01/melhores-praias-de-fortaleza-stock-thumb-zap-1280x720.jpg" alt="Oferta 3">
+                <h3>Oferta 3: Brasília - Fortaleza</h3>
+                <p>A partir de R$299,00</p>
+            </div>
+            <div class="oferta">
+                <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/08/rio-de-janeiro-capa2019-01-820x430.jpg" alt="Oferta 4">
+                <h3>Oferta 4: Belo Horizonte - Rio de Janeiro</h3>
+                <p>A partir de R$179,00</p>
+            </div>
+            <div class="oferta">
+                <img src="https://media.istockphoto.com/id/878377556/pt/foto/sao-paulo.jpg?s=612x612&w=0&k=20&c=YMK0CCZWtzdLqn1bVjfdp2_YJtAXsgxjDf6umUR1B5M=" alt="Oferta 5">
+                <h3>Oferta 5: Florianópolis - São Paulo</h3>
+                <p>A partir de R$220,00</p>
+            </div>
+        </section>
+
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Somos uma empresa dedicada a oferecer as melhores opções de passagens aéreas para você viajar com conforto e segurança. Nossa missão é facilitar a sua experiência de viagem e garantir que você encontre as melhores ofertas do mercado.</p>
+        </section>
+
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Para mais informações, entre em contato pelo e-mail: <a href="mailto:contato@exemplo.com">contato@exemplo.com</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Venda de Passagens Aéreas. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
